@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <!-- Meta tags Obrigatórias -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="CSS/css-socio-torcedor.css">
+  <link rel="stylesheet" type="text/css" href="CSS/css-geral.css">
+  
+  <title>Sócio Torcedor</title>
+</head>
+<body class="bg-cinza-claro">
+  <!-- Cabeçalho com barra de navegação. -->
+  <header class="container col-12">
+    <div class="row">
+      <nav class="nav navbar navbar-dark navbar-expand-lg fixed-top bg-cinza col-12 p-2">
+        <a class="navbar-brand ml-2 campus-font" href="./pagina-principal.html">FemFootz</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-list">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbar-list" class="collapse navbar-collapse justify-content-end">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="./pagina-principal.html">Página-Inicial</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="./pagina-socio-torcedor.html">Sócio-Torcedor</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="./pagina-sobre.html">Sobre</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="py-4 my-1 invisible">
+      </div>
+    </div>
+  </header>
+  
+  
+  <!-- Região com o efeito parallax. -->
+  <div class="container col-12">
+    <div class="row">
+      <div class="background-header text-white text-center d-none d-md-block col-12 mb-0">
+        <h1>SEJA SÓCIO TORCEDOR!</h1>
+        <h4>AJUDE SEU TIME DO CORAÇÃO A SER CADA VEZ MAIOR</h4>
+      </div>
+    </div>
+  </div>
+  
+  <main class="container col-12 my-0 my-md-4">
+    <div class="row">
+      <div class="rounded bg-branco mx-auto col-12 col-md-6 col-lg-5">
+        <div class="bg-laranja rounded-bottom text-center p-3 d-block d-md-none">
+          <h3>SEJA SÓCIO TORCEDOR!</h3>
+          <h6>AJUDE SEU TIME DO CORAÇÃO A SER CADA VEZ MAIOR</h6>
+        </div>
+        <form onsubmit="return valida_form(this)">
+          <div class="form-row py-3">
+            <div class="col-12 col-md-6">
+              <label for="exampleInputEmail1">Nome</label>
+              <input type="text" class="ipt form-control" name="nomet" placeholder="Nome" id="nome">
+            </div>
+            <div class="col-12 col-md-6">
+              <label for="exampleInputEmail1">Sobrenome</label>
+              <input type="text" class="ipt form-control" placeholder="Sobrenome" id="sobrenome">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Endereço de email</label>
+            <input type="email" class="ipt form-control" id="exampleInputEmail1" placeholder="Email" data-toggle="popover"  data-content="Digite um email válido" id="email">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Senha</label>
+            <input type="password" class="ipt form-control" id="exampleInputPassword1" placeholder="Senha" data-toggle="popover"  data-content="Digite uma senha bem difícil">
+          </div>
+          
+          <div class="form-row">
+            <div class="col-12 col-md-6">     
+              <label for="exampleFormControlSelect1">Time para ser sócio</label>
+              <select class="ipt form-control mb-4" id="exampleFormControlSelect1">
+                <option selected>Escolher...</option>
+                <option>E-Humans</option>
+                <option>Flamengo</option>
+                <option>ABC</option>
+              </select>
+            </div>
+            <div class="col-12 col-md-6">
+              <label for="exampleFormControlSelect2">Plano desejado</label>
+              <select class="ipt form-control mb-4" id="exampleFormControlSelect2">
+                <option selected>Escolher...</option>
+                <option>Premium</option>
+                <option>Fanático</option>
+                <option>Básico</option>
+              </select>
+            </div>
+          </div>
+          
+          <button type="submit" data-toggle="modal" data-target="#modalExemplo" class="inscreva btn btn-block mb-4 mt-3 text-dark bg-laranja">Inscreva-se</button>
+          <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Verificação</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  Veriique se todos os campos estao preenchidos corretamente, se estiverem, confirme.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                  <button type="button" class="btn btn-primary">Confirmar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      
+      <div class="container mx-auto col-12 col-md-6 col-lg-6">
+        <div class="row">
+          <div class="background-footer rounded d-none d-md-block col-12 mb-0">
+            <h1 class="m-2 text-center text-white">PLANOS</h1>
+          </div>
+        </div>
+        <section class="row justify-content-center py-5 bg-cinza-claro">
+          <div class="mx-3 col-12 col-md-3 pt-4 p-md-0">
+            <div class="card bg-cinza-claro text-dark shadow">
+              <div class="row no-gutters">
+                <img class="card-img-top w-100 d-none d-sm-block col-sm-3 col-md-12" src="Imagens/imagens-socio-torcedor/socio.png" alt="Banner sócio-torcedor">
+                <div class="card-body bg-branco rounded-bottom col-12 col-sm-9 col-md-12">
+                  <h5 class="card-title text-center ">BÁSICO</h5>
+                  <ul class="list-styled">
+                    <li><p class="card-text">Valor - Período</p></li>
+                    <li><p class="card-text">Ponto 2</p></li>
+                    <li><p class="card-text">Ponto 3</p></li>
+                    <li><p class="card-text">Descrição breve</p></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mx-3 col-12 col-md-3 py-4 p-md-0">
+            <div class="card bg-cinza-claro text-dark shadow">
+              <div class="row no-gutters">
+                <img class="card-img-top w-100 d-none d-sm-block col-sm-3 col-md-12" src="Imagens/imagens-socio-torcedor/socio.png" alt="Banner sócio-torcedor">
+                <div class="card-body bg-branco rounded-bottom col-12 col-sm-9 col-md-12">
+                  <h5 class="card-title text-center">FANÁTICO</h5>
+                  <ul class="list-styled">
+                    <li><p class="card-text">Valor - Período</p></li>
+                    <li><p class="card-text">Ponto 2</p></li>
+                    <li><p class="card-text">Ponto 3</p></li>
+                    <li><p class="card-text">Descrição breve</p></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mx-3 col-12 col-md-3 pb-4 p-md-0">
+            <div class="card bg-cinza-claro text-dark shadow">
+              <div class="row no-gutters">
+                <img class="card-img-top w-100 d-none d-sm-block col-sm-3 col-md-12" src="Imagens/imagens-socio-torcedor/socio.png" alt="Banner sócio-torcedor">
+                <div class="card-body bg-branco rounded-bottom col-12 col-sm-9 col-md-12">
+                  <h5 class="card-title text-center">PREMIUM</h5>
+                  <ul class="list-styled">
+                    <li><p class="card-text">Valor - Período</p></li>
+                    <li><p class="card-text">Ponto 2</p></li>
+                    <li><p class="card-text">Ponto 3</p></li>
+                    <li><p class="card-text">Descrição breve</p></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main> 
+  
+  <!-- Rodapé com os contatos dos desenvolvedores e com citações de patrocinadores e parceiros. -->
+  <footer class="container col-12">
+    <div class="row">
+      <div class="bg-laranja text-center font-110-percent p-4 col-12">
+        <h3 class="col-12">DESENVOLVEDORES</h3>
+        <div class="row">
+          <p class="col-12 col-md-6">Francisca Natália Simões</p>
+          <p class="col-12 col-md-6">Kallyuonogucharas Araujo Reis</p>
+        </div>
+      </div>
+      <div class="bg-cinza text-center font-110-percent text-white p-4 col-12">
+        <h2 class="col-12">PATROCINADORES</h2>
+        <img class="col-4 col-sm-2 col-md-1" src="./Imagens/imagens-sobre/logo_if.png" alt="Logo do IF">
+      </div>
+    </div>
+  </footer>
+  <!-- JavaScript (Opcional) -->
+  <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="js/socio.js"></script>
+</body>
+</html>
+

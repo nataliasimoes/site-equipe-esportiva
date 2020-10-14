@@ -1,0 +1,24 @@
+/*.form{
+	background-image: url("imagens/torcida1.jpg");
+	background-size: cover;	
+}
+*/
+
+.background-header{
+	background-image: url("../Imagens/imagens-socio-torcedor/header.png");
+	background-size: cover;	
+}
+
+.background-footer{
+	background-image: url("../Imagens/imagens-socio-torcedor/footer.png");
+	background-size: cover;	
+}
+
+/*.ipt{
+	opacity: 0.5;
+}*/
+
+/**{
+	border: solid #000;
+}
+*/

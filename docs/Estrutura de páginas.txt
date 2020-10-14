@@ -1,0 +1,18 @@
+
+Times
+ |
+ --> Lista ou grade de Times
+              |
+              --> Página informacional do Time
+                              |
+                              --> Jogadoras 
+                                      |
+                                      --> Página informacional da Jogadoras
+
+Campeonatos
+     |
+     --> Lista ou grade de títulos de campeonatos
+                      |
+                      --> Lista dos vários campeonatos daquele título que já ocorreram
+                                                |
+                                                --> Página informacional do campeonato

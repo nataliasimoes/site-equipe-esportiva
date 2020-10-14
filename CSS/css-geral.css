@@ -1,0 +1,66 @@
+/* Importanto o arquivo css de fontes. */
+@import url("css-fonts.css");
+
+/* Efeito Parallax */
+.parallax {
+	padding: 10%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.carousel-fino {
+	height: 100px;
+}
+
+.bg-laranja {
+	background-color: #ffb429;
+	color: #070707;
+}
+
+.bg-cinza-claro {
+	background-color: #202020;
+	color: white;
+}
+
+.bg-cinza {
+	background-color: #070707;
+	color: white;
+}
+
+.bg-branco {
+	background-color: white;
+	color: #070707;
+}
+
+
+.text-laranja {
+	color: #ffb429;
+	text-shadow: 3px 2px #252525;
+	line-height: 1.0;
+}
+
+.font-200-percent {
+	font-size: 200%;
+}
+
+.font-110-percent {
+	font-size: 110%;
+}
+
+a.custom-link:hover {
+	text-decoration: none;
+}
+
+body {
+	font-family: "typewriter-bold";
+}
+
+.campus-font {
+	font-family: "campus";
+}
+
+.Box_editor {
+	display: none;
+}

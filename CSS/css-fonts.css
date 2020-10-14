@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "typewriter-bold";
+    src: url("../Fonts/typewriter_condensed/typewcond_bold.otf");
+}
+
+@font-face {
+    font-family: "typewriter-demi";
+    src: url("../Fonts/typewriter_condensed/typewcond_demi.otf"); 
+}
+
+@font-face {
+    font-family: "typewriter-regular";
+    src: url("../Fonts/typewriter_condensed/typewcond_regular.otf"); 
+}
+
+@font-face {
+    font-family: "campus";
+    src: url("../Fonts/campus/CAMPUS.ttf"); 
+}

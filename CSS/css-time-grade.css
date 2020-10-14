@@ -1,0 +1,16 @@
+#descricao {
+    -webkit-transition: width 2s ease;
+    -moz-transition: width 2s ease;
+    -o-transition: width 2s ease;
+    transition: width 2s ease;
+    
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    vertical-align: middle;
+    width: 0%;
+}
+
+#descricao.in {
+    width: 70%;
+}
